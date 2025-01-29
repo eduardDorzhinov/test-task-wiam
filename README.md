@@ -7,6 +7,6 @@ $ npm install / yarn
 $ npm run dev / yarn 
 ```
 
-Проект задеплоен на
+Проект задеплоен на https://test-task-wiam.vercel.app/
 
 На тестовое задание ушло: 14 часов
