@@ -1,0 +1,43 @@
+.wrap {
+  position: relative;
+  width: 100%;
+}
+
+.float_label {
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: 0.2s ease all;
+  color: #7f7f7f;
+  z-index: 2;
+  font-size: 16px;
+
+  @media (max-width: 850px) {
+    font-size: 13px;
+  }
+
+  &.label_top {
+    top: 20px;
+  }
+
+  &.occupied {
+    top: -2px;
+    font-size: 12px !important;
+    background: white;
+    padding: 0 4px;
+    margin-left: -4px;
+    color: #333333;
+    font-weight: 500;
+  }
+}
+
+.asterisk::before {
+  content: '*';
+  color: var(--error);
+  display: inline-block;
+  width: fit-content;
+  transform: scale(1.2);
+}

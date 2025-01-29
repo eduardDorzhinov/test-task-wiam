@@ -1,0 +1,37 @@
+.form {
+  width: 450px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  gap: 20px;
+  background: white;
+  border-radius: 15px;
+  border: 1px solid black;
+  padding: 40px;
+}
+
+.field_wrap {
+  height: 40px;
+  min-height: fit-content;
+}
+
+.input {
+  &.error {
+    border: 1px solid red;
+  }
+}
+
+.select {
+  width: 100%;
+
+  &.error {
+    :global(.ant-select-selector) {
+      border: 1px solid red !important;
+    }
+  }
+}
+
+.error_msg {
+  margin: 5px 0 0 5px;
+  color: red;
+}

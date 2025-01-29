@@ -1,0 +1,22 @@
+.wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  min-height: 100vh;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.modal {
+  padding: 25px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+}
